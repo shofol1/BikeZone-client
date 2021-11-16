@@ -108,7 +108,11 @@ const useFirbase = () => {
       body: JSON.stringify(review),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        if (data.insertedId) {
+          alert("inserted Successfully");
+        }
+      });
   };
   const saveOrder = (name, email, phone, address, orderId) => {
     const userOrder = {

@@ -28,6 +28,7 @@ const MyOrders = () => {
       .then((data) => {
         if (data.deletedCount > 0) {
           alert("Are You Sure that You want to cancel?");
+          alert("your order Cancel");
         }
       });
   };
