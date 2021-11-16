@@ -1,3 +1,12 @@
+# Live side Link: [BikesZone](https://bikeszone-a7e2a.web.app/).
+
+* Features
+  *  you can book product
+  * you can cancel product
+  * you can see dashboard
+  * you can login and register
+  * you can see your bookings
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
