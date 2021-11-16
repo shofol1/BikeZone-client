@@ -23,7 +23,7 @@ const Addreview = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://secure-lowlands-55193.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setReviewCard(data));
   }, [review]);

@@ -11,7 +11,7 @@ const Purchase = () => {
   const [singleProduct, setSignleProduct] = useState([]);
   const [orders, setOrders] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${pid}`)
+    fetch(`https://secure-lowlands-55193.herokuapp.com/products/${pid}`)
       .then((res) => res.json())
       .then((data) => setSignleProduct(data));
   }, []);

@@ -9,7 +9,7 @@ const MakeAdmin = () => {
   };
   const handleAdminSubmit = (e) => {
     const user = { email };
-    fetch("http://localhost:5000/users/admin", {
+    fetch("https://secure-lowlands-55193.herokuapp.com/users/admin", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -37,7 +37,7 @@ const MakeAdmin = () => {
           onBlur={handleOnBlur}
           type="email"
         />
-        <Button type="submit" variant="contained">
+        <Button className="ms-3" type="submit" variant="contained">
           Make Admin
         </Button>
       </form>

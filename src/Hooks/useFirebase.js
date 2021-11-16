@@ -57,7 +57,7 @@ const useFirbase = () => {
       });
   };
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user.email}`)
+    fetch(`https://secure-lowlands-55193.herokuapp.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);
@@ -88,7 +88,7 @@ const useFirbase = () => {
 
   const saveUser = (email, displayname) => {
     const user = { email, displayname };
-    fetch("http://localhost:5000/users", {
+    fetch("https://secure-lowlands-55193.herokuapp.com/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -99,7 +99,7 @@ const useFirbase = () => {
   };
   const saveReviews = (comment, rating) => {
     const review = { comment, rating };
-    fetch("http://localhost:5000/reviews", {
+    fetch("https://secure-lowlands-55193.herokuapp.com/reviews", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -119,7 +119,7 @@ const useFirbase = () => {
       orderId: orderId,
     };
     console.log(userOrder);
-    fetch("http://localhost:5000/orders", {
+    fetch("https://secure-lowlands-55193.herokuapp.com/orders", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

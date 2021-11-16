@@ -34,6 +34,8 @@ import useAuth from "../Hooks/useAuth";
 import Addreview from "../Components/Pages/Review/Addreview";
 import AllOrders from "../Components/Pages/AllOrders/AllOrders";
 import MyOrders from "../Components/Pages/MyOrders/MyOrders";
+import AddProduct from "../Components/AddProduct/AddProduct";
+import ManageAllOrder from "../Components/ManageAllOrder/ManageAllOrder";
 
 const drawerWidth = 240;
 
@@ -88,9 +90,16 @@ function Dashboard(props) {
           <NavLink
             className="d-block"
             style={{ textDecoration: "none", textAlign: "center" }}
-            to={`${url}/addAdmin`}
+            to={`${url}/addProduct`}
           >
-            <Button>Add Admin</Button>
+            <Button>Add Product</Button>
+          </NavLink>
+          <NavLink
+            className="d-block"
+            style={{ textDecoration: "none", textAlign: "center" }}
+            to={`${url}/manageProducts`}
+          >
+            <Button>Manage All Orders</Button>
           </NavLink>
           <NavLink
             className="d-block"
@@ -201,8 +210,11 @@ function Dashboard(props) {
           <Route path={`${path}/pay`}>
             <Pay></Pay>
           </Route>
-          <Route path={`${path}/addAdmin`}>
-            <AddAdmin></AddAdmin>
+          <Route path={`${path}/addProduct`}>
+            <AddProduct></AddProduct>
+          </Route>
+          <Route path={`${path}/manageProducts`}>
+            <ManageAllOrder></ManageAllOrder>
           </Route>
           <Route path={`${path}/makeAdmin`}>
             <MakeAdmin></MakeAdmin>

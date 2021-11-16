@@ -20,7 +20,7 @@ const Products = () => {
 <Grid container spacing={${spacing}}>
 `;
   useEffect(() => {
-    fetch("http://localhost:5000/products", {
+    fetch("https://secure-lowlands-55193.herokuapp.com/products", {
       method: "GET",
     })
       .then((res) => res.json())

@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 const AllReviews = () => {
   const [allReviews, setAllReviews] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://secure-lowlands-55193.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setAllReviews(data));
   }, []);
